@@ -1,0 +1,7 @@
+- op: replace
+  path: /spec/tls/0/hosts
+  value: [cms-auth.staging.bnk.to]
+
+- op: replace
+  path: /spec/rules/0/host
+  value: cms-auth.staging.bnk.to

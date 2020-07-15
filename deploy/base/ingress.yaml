@@ -1,0 +1,39 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: cms-auth
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  tls:
+    - hosts:
+        - "cms-auth-ENV.bnk.to"
+      secretName: cert-bnkto-wildcard
+  rules:
+    - host: "cms-auth-ENV.bnk.to"
+      http:
+        paths:
+          - path:
+            backend:
+              serviceName: cms-auth
+              servicePort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: cms
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  tls:
+    - hosts:
+        - "cms-ENV.bnk.to"
+      secretName: cert-bnkto-wildcard
+  rules:
+    - host: "cms-ENV.bnk.to"
+      http:
+        paths:
+          - path:
+            backend:
+              serviceName: cms
+              servicePort: 80

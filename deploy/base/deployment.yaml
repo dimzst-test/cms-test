@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cms-auth
+  name: cms-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cms-auth
+  template:
+    metadata:
+      labels:
+        app: cms-auth
+    spec:
+      containers:
+        - image: asia.gcr.io/b-api-production/netlify-cms-github-oauth-provider:095081a
+          name: netlify-cms-github-oauth-provider
+          env:
+            - name: NODE_ENV
+              value: production
+          envFrom:
+            - secretRef:
+                name: cms-auth
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cms
+  name: cms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cms
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: cms
+    spec:
+      containers:
+        - image: asia.gcr.io/b-api-production/cms:da5720b
+          name: cms
+          imagePullPolicy: Always
