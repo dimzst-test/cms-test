@@ -1,0 +1,2 @@
+# cms
+Netlify CMS + Hugo
