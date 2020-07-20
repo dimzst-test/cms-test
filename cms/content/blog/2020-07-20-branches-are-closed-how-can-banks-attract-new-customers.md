@@ -5,6 +5,8 @@ description: Brankas is partnering with banks in Southeast Asia to fast-track
   digital enablement and attract new customers online. Read more on how we are
   working with banks to develop account opening APIs.
 ---
+![](/img/all-products-hero-bg.png)
+
 Banks in Southeast Asia rely on retail branches to serve existing customers and bring in new ones. Since the COVID-19 pandemic began, banks have scaled down their branch networks to protect their employees, comply with local restrictions, and simplify logistics like cash collection. At the same time, retail and corporate customers are counting on digital banking services more than ever. How are banks addressing the sudden change in demand?
 
 Digital-ready banks are seeing a significant increase in new sign-ups, most at a rate of more than double the average registrations. In the Philippines, Rizal Commercial Banking Corporation (RCBC) reported a [259% increase](https://fintechnews.sg/38545/fintechphilippines/more-filipinos-turn-to-digital-banking-amidst-covid-19-lockdown/) in new online accounts within the first three days of enhanced community quarantine; UnionBank in March [opened 7,000 new accounts](https://www.euromoney.com/article/b1l1807j22cygc/unionbank-ceo-tips-coronavirus-to-end-cash-accelerate-banks-digital-plans?copyrightInfo=true) and had 20,000 downloads of its app in March, with website traffic doubling.
