@@ -1,10 +1,11 @@
 backend:
   name: github
-  repo: favadi/cms-test
-  branch: PRD-5706 # Branch to update (optional; defaults to master)
-  base_url: https://cms-auth.staging.bnk.to
+  repo: dimzst/cms-test
+  branch: master # Branch to update (optional; defaults to master)
+  base_url: http://www.my-site.local:3000
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 collections:
   - name: 'blog'
     label: 'Blog'
